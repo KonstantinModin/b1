@@ -23,6 +23,11 @@ html, body {
     /* border: 1px solid red; */
 }
 
+.cards {
+    width: 90%;
+    margin: 2rem auto;
+}
+
 .form-inline {    
     /* border: 1px solid red; */
     /* width: 100vw; */
