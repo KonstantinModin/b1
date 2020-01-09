@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+#root {
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#cover {
+    background: #222 url('./stars.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#cover-caption {
+    width: 100%;
+    /* border: 1px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
+.form-inline {    
+    /* border: 1px solid red; */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-inline > * {    
+    margin-left: 0.5rem;
+}
+
+nav {
+    height: 56px;
 }
