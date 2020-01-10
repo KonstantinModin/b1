@@ -31,9 +31,9 @@ html, body {
 .form-inline {    
     /* border: 1px solid red; */
     /* width: 100vw; */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .form-inline > * {    

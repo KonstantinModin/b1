@@ -25,7 +25,7 @@ function App() {
       <section id="cover">
         <div id="cover-caption">
           <div className="container">
-            <div className="col-sm-10 col-sm-offset-1"></div>
+            <div className="col-sm-10 offset-sm-1"></div>
             <h1 className="display-3">Welcome to Bootstrap 4</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
@@ -33,7 +33,7 @@ function App() {
               impedit voluptatem accusamus officiis asperiores cum aut vitae
               vero iure. Quasi, quos?
             </p>
-            <form action="" className="form-inline">
+            <form action="" className="form-inline justify-content-center">
               <div className="form-group">
                 <label className="sr-only">Name</label>
                 <input
@@ -53,7 +53,7 @@ function App() {
               <button className="btn btn-success btn-lg">Get it!</button>
             </form>
             <br />
-            <button className="btn btn-secondary-outline btn-sm">&darr;</button>
+            <button className="btn btn-outline-light btn-sm">&darr;</button>
           </div>
         </div>
       </section>
