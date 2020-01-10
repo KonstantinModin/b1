@@ -43,3 +43,31 @@ html, body {
 nav {
     height: 56px;
 }
+
+#about {
+    background: url(./girlincar.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 4rem;
+}
+
+.about-text {
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1.875rem;
+    /* margin: 2rem; */
+}
+
+button {
+    margin-right: 0.5rem;
+}
+
+.news {
+    padding: 4rem;
+}
+
+.footer-main {
+    background: #222;
+    color: rgba(255, 255, 255, 0.815);
+    font-size: 0.9rem;
+    padding: 2.5rem;
+}

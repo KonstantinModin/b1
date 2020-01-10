@@ -2,9 +2,10 @@ import React from "react";
 import first from "./woman-camera.jpg";
 import second from "./spiderweb.jpg";
 import third from "./hearthand.jpg";
-import prog from './programming.jpg';
-import chalk from './chalkboard.jpg';
-import type from './working.jpg';
+import prog from "./programming.jpg";
+import chalk from "./chalkboard.jpg";
+import type from "./working.jpg";
+import stars from './stars.jpg';
 import {
   Carousel,
   Navbar,
@@ -13,7 +14,8 @@ import {
   FormControl,
   Button,
   Card,
-  CardColumns
+  CardColumns,
+  CardGroup
 } from "react-bootstrap";
 import "./App.css";
 
@@ -190,6 +192,121 @@ function App() {
           </Card.Body>
         </Card>
       </CardColumns>
+      <section id="about">
+        <div className="section-content">
+          <div className="container">
+            <div className="col-md-6">
+              <div className="about-text">
+                <h3>About me</h3>
+                <p className="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem unde adipisci saepe quam animi esse doloremque
+                  voluptatem distinctio et suscipit dolorem perferendis
+                  blanditiis, laboriosam quas nobis! Nisi ullam ipsam ea!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quidem unde adipisci saepe quam animi esse doloremque
+                  voluptatem distinctio et suscipit dolorem perferendis
+                  blanditiis, laboriosam quas nobis! Nisi ullam ipsam ea!
+                </p>
+                <h5>Folow me on the web</h5>
+                <button className="btn btn-sm btn-secondary">twitter</button>
+                <button className="btn btn-sm btn-secondary">facebook</button>
+                <button className="btn btn-sm btn-secondary">youtube</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="news">
+        <div className="title">
+          <h3>Latest News</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iusto
+            id exercitationem eaque qui architecto modi iure temporibus rem,
+            ullam at, excepturi dolore tenetur illum? Laborum a deleniti
+            adipisci mollitia.
+          </p>
+        </div>
+
+        
+        <CardGroup>
+          <Card>
+            <Card.Img variant="top" src={second} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </Card.Text>
+              <Button variant="success">Success right Now!</Button>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src={stars} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This card has supporting text below as a natural lead-in to
+                additional content.{" "}
+              </Card.Text>
+              <Button variant="success">Success right Now!</Button>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant="top" src={chalk} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </Card.Text>
+              <Button variant="success">Success right Now!</Button>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+        </CardGroup>
+      </section>
+      <footer className="footer-main">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-3">
+              <p>Copyright 2015 Konstantin Modin</p>
+            </div>
+            <div className="col-sm-3">
+              <ul className="list-unstyled">
+                <li><a href="">home</a></li>
+                <li><a href="">what we do</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">latest</a></li>
+              </ul>
+            </div>
+            <div className="col-sm-3">
+              <ul className="list-unstyled">
+                <li><a href="">facebook</a></li>
+                <li><a href="">twitter</a></li>
+                <li><a href="">youtube</a></li>
+                <li><a href="">linkedin</a></li>
+              </ul>
+            </div>
+            <div className="col-sm-3">
+              <h6>Tiny header</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rerum, error asperiores expedita facilis voluptatibus doloremque voluptatem ab corporis qui atque nihil, magni hic cupiditate fugiat eligendi! Recusandae, iste? Laudantium?</p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
