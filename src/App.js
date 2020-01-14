@@ -1,4 +1,5 @@
 import React from "react";
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import Cover from "./Cover";
 import Navbar from "./NavBar";
@@ -13,13 +14,18 @@ import "./App.css";
 const App = () => {
     return (
         <>
-            <Cover />
+           <Cover />
+            {/* <StickyContainer> */}
+            {/* <Sticky> */}
+                {/* {({style})=><Navbar style={style}/>} */}
+            {/* </Sticky> */}
             <Navbar />
             <Carousel />
             <Cards />
             <About />
             <News />
             <Footer />
+            {/* </StickyContainer> */}
         </>
     );
 }
