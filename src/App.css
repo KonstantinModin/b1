@@ -1,8 +1,18 @@
+.system {
+    position: fixed;
+    z-index: 1000;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+}
+
 #root {
     height: 100%;
 }
 
-html, body {
+html, body, .firstDiv {
     height: 100%;
 }
 
