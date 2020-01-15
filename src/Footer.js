@@ -1,6 +1,9 @@
 import React from "react";
 
 const Footer = () => {
+  const expandButtonsFromArray = array => array.map((e,i)=>
+    <li key={i}><button className="btn btn-sm btn-outline-info">{e}</button></li>
+  )
   return (
     <footer className="footer-main">
       <div className="container">
@@ -9,19 +12,13 @@ const Footer = () => {
             <p>Copyright 2015 Konstantin Modin</p>
           </div>
           <div className="col-sm-3">
-            <ul className="list-unstyled">
-              <li><button href="">what we do</button></li>
-              <li><button href="">home</button></li>
-              <li><button href="">about</button></li>
-              <li><button href="">latest</button></li>
+            <ul className="list-unstyled d-flex flex-column align-items-center">
+              {expandButtonsFromArray(['what we do','home','about','latest'])}              
             </ul>
           </div>
           <div className="col-sm-3">
-            <ul className="list-unstyled">
-              <li><button href="">facebook</button></li>
-              <li><button href="">twitter</button></li>
-              <li><button href="">youtube</button></li>
-              <li><button href="">linkedin</button></li>
+            <ul className="list-unstyled d-flex flex-column align-items-center">
+              {expandButtonsFromArray(['facebook','twitter','youtube','linkedin'])}
             </ul>
           </div>
           <div className="col-sm-3">

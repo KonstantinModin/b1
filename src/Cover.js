@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cover = () => {
+const Cover = ({ scrollButtonHandler }) => {
     return (
         <section id="cover">
         <div id="cover-caption">
@@ -33,7 +33,10 @@ const Cover = () => {
               <button className="btn btn-success btn-lg">Get it!</button>
             </form>
             <br />
-            <button className="btn btn-outline-light btn-sm">&darr;</button>
+            <button 
+              className="btn btn-outline-light btn-sm" 
+              onClick={scrollButtonHandler}
+              >&darr;</button>
           </div>
         </div>
       </section>

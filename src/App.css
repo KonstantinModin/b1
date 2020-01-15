@@ -1,17 +1,3 @@
-.system {
-    position: fixed;
-    z-index: 1000;
-}
-
-.sticky-top {
-    position: sticky;
-    top: 0;
-}
-
-#root {
-    height: 100%;
-}
-
 html, body, .firstDiv {
     height: 100%;
 }
@@ -20,7 +6,7 @@ html, body, .firstDiv {
     background: #222 url('./stars.jpg') center center no-repeat;
     background-size: cover;
     color: white;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -81,4 +67,9 @@ button {
     color: rgba(255, 255, 255, 0.815);
     font-size: 0.9rem;
     padding: 2.5rem;
+}
+
+.btn-sm {
+    margin-bottom: 0.2rem;
+    /* align-content: center; */
 }
